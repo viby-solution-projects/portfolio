@@ -1,0 +1,459 @@
+﻿Viby Solution
+Portfolio Website Content
+________________
+
+
+Color Schema 
+Blue - #0331d0
+White - #fefefe
+Black - #111111
+
+
+NAVIGATION
+Logo: Viby
+Navigation:
+Home
+Solution
+Academy
+Ventures
+About
+Work
+Right CTA: Let's Talk
+
+01 - HOME PAGE
+HERO
+Building what businesses need to move forward.
+We work with startups, small businesses, D2C brands and entrepreneurs to build better businesses through technology, marketing, business development and strategic thinking.
+[Work With Us]
+[Explore Viby]
+
+
+
+
+
+
+
+
+
+
+
+A company built around three ideas.
+Solve. Learn. Build.
+
+
+Viby Solution
+We help businesses turn problems into practical solutions.
+
+
+Viby Academy
+We help freshers and students turn knowledge into real-world experience.
+
+
+Viby Ventures
+We build and test ideas of our own, turning opportunities into businesses.
+[Explore Viby]
+
+WHAT WE DO
+From ideas to execution.
+Good ideas are everywhere.
+What matters is knowing what to build, how to market it, how to reach the right people and how to keep improving it.
+
+
+That's where we come in.
+
+
+Technology
+Websites, e-commerce and AI-powered solutions designed around real business needs.
+
+
+Marketing
+Digital marketing, SEO, social media, content, performance marketing and email/CRM.
+
+
+Business Development
+Finding opportunities, understanding markets and creating better ways to reach customers.
+
+
+Consulting
+Practical thinking across business strategy, startups, e-commerce, technology and marketing.
+[Explore Our Services →]
+
+WHY VIBY
+We don't believe in one-size-fits-all solutions.
+
+
+Every business is different.
+A local business doesn't have the same problems as a D2C brand. A startup doesn't need the same approach as an established company.
+We start with the problem, understand the business and then figure out what actually makes sense.
+
+
+Understand → Plan → Build → Launch → Improve
+
+WHO WE WORK WITH
+Built for businesses that are building.
+
+
+We work with:
+Startups
+Small businesses
+D2C brands
+Local brands
+Entrepreneurs
+Service-based businesses
+New business ideas
+
+
+Whether you're starting from scratch or trying to improve what already exists, we can help turn the next step into something actionable.
+
+THE VIBY ECOSYSTEM
+One company. Three ways to create impact.
+01 - Viby Solution - For businesses.
+Technology, marketing, business development and consulting to help businesses build, grow and operate better.
+[Explore Solution →]
+
+
+02 - Viby Academy
+For people.
+Practical training and internship opportunities designed to help students and freshers gain experience by working on real projects.
+[Explore Academy →]
+
+
+03 - Viby Ventures
+For ideas.
+Our venture-building arm focused on identifying problems, creating solutions, validating ideas and building businesses of our own.
+[Explore Ventures →]
+
+OUR WORK
+Ideas are easy. Execution is the work.
+We've worked on projects across technology, e-commerce and business development.
+Featured Work
+Broker Streets
+Technology / Business
+Building digital solutions for a modern brokerage business.
+brokerstreets.com
+Kizzo
+E-commerce / Marketing / Technology
+Working across e-commerce, digital growth and technology for a consumer brand.
+kizzo.in
+[View Our Work →]
+
+FOUNDER
+Built by Het Chag.
+Viby Solution was founded by Het Chag in July 2026 with a simple idea:
+Businesses don't always need more people telling them what to do. They need people who can understand the problem and help get the work done.
+Today, Viby brings together a small team working across technology, marketing, business development and new ventures.
+[Connect with Het →]
+
+FINAL CTA
+Have something you're building?
+Let's talk about what you're working on, where you're stuck and what we can build together.
+[Let's Talk →]
+
+02 - VIBY SOLUTION PAGE
+HERO
+Solutions for businesses that want to move forward.
+We help startups, small businesses, D2C brands, local businesses and entrepreneurs solve business problems through technology, marketing, business development and consulting.
+[Let's Work Together]
+
+SERVICES
+Technology
+Build better digital experiences.
+We create practical digital solutions that help businesses operate, sell and grow.
+Services:
+Website Development
+Shopify & E-commerce
+AI Tools & Implementation
+
+Marketing
+Get discovered. Stay relevant. Grow.
+We help businesses build their digital presence and connect with the people who matter.
+Services:
+Digital Marketing
+SEO
+Social Media
+Content Creation
+Performance Marketing
+Email & CRM
+
+Business Development
+Find opportunities. Create growth.
+Growth isn't always about spending more on marketing. Sometimes it's about finding the right market, customer or opportunity.
+Services:
+Lead Generation
+Market Research
+
+Consulting
+Sometimes, you just need a different perspective.
+We work with businesses to understand challenges, evaluate opportunities and create practical strategies.
+Areas:
+Business Strategy
+E-commerce Consulting
+Startup Consulting
+Technology Consulting
+Marketing Consulting
+
+OUR APPROACH
+We keep it simple.
+01 - Understand
+We learn about your business, goals and the problem you're trying to solve.
+02 - Think
+We research, analyse and identify the most practical approach.
+03 - Build
+We turn the plan into something real.
+04 - Improve
+We measure, learn and make it better.
+
+WHO WE WORK WITH
+Small enough to understand you. Ambitious enough to think big.
+We work with businesses at different stages:
+Startups
+From validating an idea to building the first version.
+Small Businesses
+Helping traditional and service-based businesses adopt better technology and marketing.
+D2C Brands
+Building and improving digital storefronts, marketing systems and customer journeys.
+Local Brands
+Helping businesses build visibility and reach customers beyond their immediate location.
+Entrepreneurs
+Turning business ideas into something structured, actionable and real.
+
+CTA
+Have a business problem?
+Tell us what you're working on.
+Email: [Your Viby email]
+Instagram: [VibySolution]
+
+03 - VIBY ACADEMY
+HERO
+Learn by doing. Not just by watching.
+Viby Academy gives college students and freshers the opportunity to learn practical skills, work on real projects and start building their professional careers.
+[Explore Programs]
+
+OUR PHILOSOPHY
+Because experience can't be taught from a textbook.
+Courses can teach you the basics.
+Real projects teach you how things actually work.
+At Viby Academy, students get the opportunity to work on real Viby and client projects, learn from practical situations and build work they can talk about when applying for jobs.
+
+PROGRAMS
+For Freshers
+2-Month Unpaid Internship
+Designed for freshers looking to gain their first practical experience.
+You get the opportunity to:
+Work on real projects
+Learn practical skills
+Build your professional portfolio
+Receive an internship certificate
+Optimise your LinkedIn profile
+Rebuild your CV
+Get career guidance
+Explore potential job opportunities
+[Apply for Internship →]
+
+For College Students
+3-Month Paid Training + Internship
+A structured learning and internship experience designed for college students who want to develop practical skills before entering the workforce.
+You learn. You work. You build.
+The program combines training with hands-on project experience.
+[Explore the Program →]
+
+DOMAINS
+Choose what you want to build your career in.
+Digital Marketing
+E-commerce
+Artificial Intelligence
+Web Development
+Content Creation
+Business Development
+Sales
+Graphic Design
+And more
+
+WHAT YOU GET
+More than a certificate.
+Real Project Experience
+Work on actual Viby and client projects.
+Portfolio Building
+Build work you can show to future employers.
+LinkedIn Optimisation
+Present yourself professionally online.
+CV Rebuilding
+Create a stronger, more relevant CV.
+Certificate
+Receive certification for your internship/program.
+Career Opportunities
+Eligible candidates may get access to job opportunities.
+
+WHO IS IT FOR?
+For students and freshers from Navsari who want to get ahead before their first job.
+You don't need to know everything.
+You need curiosity, commitment and the willingness to learn.
+
+CTA
+Your first opportunity doesn't have to be your last.
+Start building experience today.
+[Apply Now →]
+
+04 - VIBY VENTURES
+HERO
+We don't just work on businesses. We build them too.
+Viby Ventures is our internal venture-building arm where we identify problems, explore opportunities and build products and businesses of our own.
+[Explore Our Ventures]
+
+WHAT WE DO
+From problem to possibility.
+We look for problems worth solving.
+Then we:
+Identify
+Find interesting problems, gaps and opportunities.
+Validate
+Talk to users, research markets and test assumptions.
+Build
+Create products, services or businesses around validated opportunities.
+Launch
+Put them into the real world.
+Scale
+Double down on ideas that show potential.
+
+OUR APPROACH
+Think like a startup. Build like a business.
+We don't want to build products just because we can.
+We want to build things people actually need.
+That means starting small, testing quickly, learning from the market and improving along the way.
+
+SOME IDEAS STAY IDEAS.
+That's okay.
+The goal isn't to make every idea successful.
+The goal is to discover the ideas worth pursuing.
+
+CTA
+Have an idea worth exploring?
+We'd love to hear it.
+[Get in Touch →]
+
+05 - ABOUT US
+HERO
+We're building more than a company. We're building an ecosystem.
+Viby Solution started in July 2026 with a simple belief:
+Businesses, people and ideas grow better when they have the right support around them.
+Today, that belief is taking shape through three parts of Viby:
+Viby Solution - helping businesses.
+Viby Academy - developing people.
+Viby Ventures - building ideas.
+
+OUR STORY
+It started with a simple question.
+Why should technology, marketing, business development and strategy always be treated as separate things?
+For many startups and small businesses, they aren't.
+A business may need a website, but the website needs marketing.
+Marketing needs a strategy.
+Strategy needs market understanding.
+And all of it needs to work together.
+Viby was created to bring those pieces closer together.
+
+OUR MISSION
+Make it easier for people to build better businesses.
+We want to help businesses solve real problems, help young talent gain real experience and build ideas that can become meaningful businesses.
+
+OUR VISION
+Build. Grow. Learn. Repeat.
+We want Viby to become a place where:
+Businesses find solutions.
+People find opportunities.
+Ideas find a way to become real.
+
+OUR VALUES
+Stay Curious
+Things change quickly. We keep learning.
+Think Practically
+Good ideas are only useful when they can be executed.
+Start Small
+We don't wait for everything to be perfect.
+Keep Building
+We believe progress comes from action.
+Be Honest
+We'd rather tell you what you actually need than sell you what you don't.
+
+FOUNDER
+Het Chag
+Founder, Viby Solution
+Viby Solution was founded by Het Chag in July 2026.
+He works across technology, marketing, e-commerce, business development and startups, with a focus on turning ideas into practical solutions.
+LinkedIn: https://www.linkedin.com/in/het-chag/
+
+06 - WORK PAGE
+HERO
+Things we've been building.
+A selection of projects across technology, e-commerce, marketing and business development.
+
+BROKER STREETS
+Broker Streets
+Business / Technology
+A digital platform and business ecosystem built around the brokerage industry.
+Website: brokerstreets.com
+[View Project →]
+
+KIZZO
+Kizzo
+E-commerce / Technology / Marketing
+Working across e-commerce, digital presence, marketing and technology for a consumer brand.
+Website: kizzo.in
+[View Project →]
+
+FUTURE PROJECTS
+More coming soon.
+We're constantly working on new client projects and internal ventures.
+Some will make it here.
+Some will become something much bigger.
+
+07 - CONTACT PAGE
+HERO
+Let's build something.
+Have a business you're trying to grow?
+Need help with technology or marketing?
+Have a project in mind?
+Or simply want to talk?
+Reach out.
+
+GET IN TOUCH
+Email
+[Your actual Viby email]
+For business enquiries, partnerships and general questions.
+Instagram
+@VibySolution
+Follow us for what we're building, learning and working on.
+LinkedIn
+Viby Solution
+Company updates, projects and opportunities.
+
+LOCATION
+Viby Solution
+138, Central Business Hub
+Opposite Mahendra Brothers
+Jamalpore, Navsari
+Gujarat, India
+
+08 - FOOTER
+Viby
+Build. Grow. Learn.
+A company working across businesses, people and ideas.
+
+Viby Solution
+Technology · Marketing · Business Development · Consulting
+Viby Academy
+Training · Internships · Career Development
+Viby Ventures
+Startups · Products · New Ideas
+
+Company
+About
+Work
+Contact
+Explore
+Solution
+Academy
+Ventures
+Connect
+LinkedIn
+Instagram
+© 2026 Viby Solution. All rights reserved.
