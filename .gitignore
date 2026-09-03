@@ -49,3 +49,7 @@ Thumbs.db
 # TypeScript cache
 *.tsbuildinfo
 next-env.d.ts
+
+#context files
+*.pdf
+*.txt
