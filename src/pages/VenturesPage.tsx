@@ -35,10 +35,6 @@ export default function VenturesPage() {
       {/* Hero */}
       <section className="page-hero">
         <Reveal>
-          <p className="overline">
-            <span />
-            Viby Ventures · For Ideas
-          </p>
           <h1>
             We don&rsquo;t just work on businesses. <em>We build them too.</em>
           </h1>
@@ -60,7 +56,6 @@ export default function VenturesPage() {
       {/* What We Do */}
       <section className="section" id="what-we-do">
         <div className="section-heading">
-          <p className="section-label">[ WHAT WE DO ]</p>
           <h2>
             From problem to <span>possibility.</span>
           </h2>
@@ -85,7 +80,6 @@ export default function VenturesPage() {
 
       {/* Our Approach */}
       <section className="section ventures-approach-section">
-        <p className="section-label">[ OUR APPROACH ]</p>
         <Reveal className="reasons-top">
           <h2>
             Think like a startup. <span>Build like a business.</span>

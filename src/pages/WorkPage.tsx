@@ -8,10 +8,6 @@ export default function WorkPage() {
       {/* Hero */}
       <section className="page-hero">
         <Reveal>
-          <p className="overline">
-            <span />
-            Portfolio &amp; Ventures · Selected Work
-          </p>
           <h1>
             Things we&rsquo;ve been <em>building.</em>
           </h1>

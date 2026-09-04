@@ -20,10 +20,6 @@ export default function ContactPage() {
       {/* Hero */}
       <section className="page-hero">
         <Reveal>
-          <p className="overline">
-            <span />
-            Contact &amp; Inquiries · Navsari / Global
-          </p>
           <h1>
             Let&rsquo;s build <em>something.</em>
           </h1>
@@ -48,10 +44,12 @@ export default function ContactPage() {
               {/* Email */}
               <div className="contact-item">
                 <b>Email</b>
-                <div className="email-pill">
-                  <span>[Your Viby email]</span>
-                  <small className="placeholder-tag">Configurable placeholder</small>
-                </div>
+                <a
+                  href="mailto:vibysolution@gmail.com"
+                  className="contact-link"
+                >
+                  vibysolution@gmail.com <span>↗</span>
+                </a>
                 <p>For business enquiries, partnerships and general questions.</p>
               </div>
 

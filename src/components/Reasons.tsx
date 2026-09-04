@@ -21,7 +21,6 @@ const AUDIENCES = [
 export default function Reasons() {
   return (
     <section className="section reasons" id="why-viby">
-      <p className="section-label">[ 03 — WHY VIBY ]</p>
       <Reveal className="reasons-top">
         <h2>
           We don&rsquo;t believe in <span>one-size-fits-all solutions.</span>

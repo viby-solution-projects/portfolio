@@ -5,7 +5,6 @@ export default function Cta({
   desc = "Let's talk about what you're working on, where you're stuck and what we can build together.",
   buttonText = "Let's Talk",
   buttonLink = "#/contact",
-  label = "[ 06 — START A CONVERSATION ]",
 }: {
   title?: string;
   desc?: string;
@@ -17,7 +16,6 @@ export default function Cta({
     <section className="cta" id="cta-section">
       <div className="cta-content">
         <Reveal>
-          <p className="section-label">{label}</p>
           <h2>
             {title.includes("building?") ? (
               <>
@@ -28,7 +26,7 @@ export default function Cta({
             )}
           </h2>
           <p>{desc}</p>
-          <a className="button button-light" href={buttonLink}>
+          <a className="button button-light mt-10 " href={buttonLink}>
             {buttonText} <span>↗</span>
           </a>
         </Reveal>

@@ -32,7 +32,6 @@ export default function EcosystemSection() {
     <section className="section ecosystem-section" id="ecosystem">
       <div className="section-heading">
         <div>
-          <p className="section-label">[ 01 — THE VIBY ECOSYSTEM ]</p>
           <h2>
             One company.
             <br />

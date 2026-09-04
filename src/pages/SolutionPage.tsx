@@ -101,10 +101,6 @@ export default function SolutionPage() {
       {/* Page Hero */}
       <section className="page-hero">
         <Reveal>
-          <p className="overline">
-            <span />
-            Viby Solution · For Businesses
-          </p>
           <h1>
             Solutions for businesses that want to <em>move</em> forward.
           </h1>
@@ -127,7 +123,6 @@ export default function SolutionPage() {
       {/* Services Grid */}
       <section className="section" id="services-list">
         <div className="section-heading">
-          <p className="section-label">[ SERVICES ]</p>
           <h2>
             What we do for <span>businesses.</span>
           </h2>
@@ -166,7 +161,6 @@ export default function SolutionPage() {
       {/* Approach */}
       <section className="section approach-section">
         <div className="section-heading">
-          <p className="section-label">[ OUR APPROACH ]</p>
           <h2>
             We keep it <span>simple.</span>
           </h2>
@@ -191,7 +185,6 @@ export default function SolutionPage() {
 
       {/* Who We Work With */}
       <section className="section who-stages-section">
-        <p className="section-label">[ WHO WE WORK WITH ]</p>
         <Reveal className="reasons-top">
           <h2>
             Small enough to understand you. <span>Ambitious enough to think big.</span>

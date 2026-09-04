@@ -13,7 +13,6 @@ export default function Process() {
     <div className="process">
       <div className="section process-inner">
         <div className="section-heading">
-          <p className="section-label">[ 05 — PROCESS ]</p>
           <h2>How we work</h2>
         </div>
         <div className="process-track">

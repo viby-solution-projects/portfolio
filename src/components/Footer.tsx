@@ -49,6 +49,9 @@ export default function Footer() {
         </div>
         <div>
           <b>Connect</b>
+          <a href="mailto:vibysolution@gmail.com">
+            vibysolution@gmail.com ↗
+          </a>
           <a
             href="https://www.linkedin.com/in/het-chag/"
             target="_blank"

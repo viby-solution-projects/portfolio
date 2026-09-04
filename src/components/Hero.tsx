@@ -5,10 +5,6 @@ export default function Hero() {
     <section className="hero" id="home">
       <div className="hero-content">
         <Reveal>
-          <p className="overline">
-            <span />
-            Solve. Learn. Build. · Viby Ecosystem
-          </p>
           <h1>
             Building what businesses need to <em>move</em> forward.
           </h1>

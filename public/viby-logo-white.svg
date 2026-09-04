@@ -1,12 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
-  <defs>
-    <linearGradient id="vibyFaviconBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0331d0" />
-      <stop offset="100%" stop-color="#02249a" />
-    </linearGradient>
-  </defs>
-  <rect width="64" height="64" rx="14" fill="url(#vibyFaviconBg)" />
-  <g fill="#ffffff" transform="translate(32, 32) scale(0.044) translate(-750.55, -749.73)">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="180 488 1140 524" width="100%" height="100%">
+  <g fill="#ffffff">
     <g transform="translate(174.703144, 890.249903)">
       <path d="M 184.796875 -95.703125 L 270.59375 -394.90625 L 356.40625 -394.90625 L 222.203125 0 L 143.546875 0 L 10.453125 -394.90625 L 99 -394.90625 L 183.703125 -95.703125 Z M 184.796875 -95.703125" />
     </g>

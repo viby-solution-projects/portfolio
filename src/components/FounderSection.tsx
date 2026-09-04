@@ -4,7 +4,6 @@ export default function FounderSection() {
   return (
     <section className="section founder-section" id="founder">
       <div className="section-heading">
-        <p className="section-label">[ 05 — FOUNDER ]</p>
         <h2>
           Built by <span>Het Chag.</span>
         </h2>

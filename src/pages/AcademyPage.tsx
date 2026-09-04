@@ -46,10 +46,6 @@ export default function AcademyPage() {
       {/* Hero */}
       <section className="page-hero">
         <Reveal>
-          <p className="overline">
-            <span />
-            Viby Academy · For People
-          </p>
           <h1>
             Learn by doing. <em>Not just by watching.</em>
           </h1>
@@ -71,7 +67,6 @@ export default function AcademyPage() {
 
       {/* Philosophy */}
       <section className="section philosophy-section">
-        <p className="section-label">[ OUR PHILOSOPHY ]</p>
         <Reveal className="reasons-top">
           <h2>
             Because experience can&rsquo;t be <span>taught from a textbook.</span>
@@ -90,7 +85,6 @@ export default function AcademyPage() {
       {/* Programs */}
       <section className="section programs-section" id="programs">
         <div className="section-heading">
-          <p className="section-label">[ PROGRAMS ]</p>
           <h2>
             Structured for <span>real outcomes.</span>
           </h2>
@@ -156,7 +150,6 @@ export default function AcademyPage() {
       {/* Domains */}
       <section className="section domains-section">
         <div className="section-heading">
-          <p className="section-label">[ DOMAINS ]</p>
           <h2>
             Choose what you want to <span>build your career in.</span>
           </h2>
@@ -176,7 +169,6 @@ export default function AcademyPage() {
       {/* What You Get */}
       <section className="section what-you-get-section">
         <div className="section-heading">
-          <p className="section-label">[ WHAT YOU GET ]</p>
           <h2>
             More than <span>a certificate.</span>
           </h2>
@@ -197,7 +189,6 @@ export default function AcademyPage() {
       {/* Who Is It For */}
       <section className="section who-academy-section">
         <Reveal className="who-navsari-banner">
-          <p className="section-label">[ WHO IS IT FOR? ]</p>
           <h2>
             For students and freshers from <span>Navsari</span> who want to get ahead before their
             first job.

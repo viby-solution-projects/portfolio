@@ -36,10 +36,6 @@ export default function AboutPage() {
       {/* Hero */}
       <section className="page-hero">
         <Reveal>
-          <p className="overline">
-            <span />
-            About Viby · Founded July 2026
-          </p>
           <h1>
             We&rsquo;re building more than a company. <em>We&rsquo;re building an ecosystem.</em>
           </h1>
@@ -63,7 +59,6 @@ export default function AboutPage() {
 
       {/* Story */}
       <section className="section story-section">
-        <p className="section-label">[ OUR STORY ]</p>
         <Reveal className="reasons-top">
           <h2>
             It started with a <span>simple question.</span>
@@ -119,7 +114,6 @@ export default function AboutPage() {
       {/* Values */}
       <section className="section values-section">
         <div className="section-heading">
-          <p className="section-label">[ OUR VALUES ]</p>
           <h2>
             Principles that guide <span>how we work.</span>
           </h2>
