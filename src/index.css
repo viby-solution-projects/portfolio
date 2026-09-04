@@ -77,12 +77,23 @@ img {
   display: inline-flex;
   align-items: center;
   text-decoration: none;
-  transition: opacity 0.2s cubic-bezier(0.16, 1, 0.3, 1), transform 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: color 0.2s cubic-bezier(0.16, 1, 0.3, 1), transform 0.2s cubic-bezier(0.16, 1, 0.3, 1);
   user-select: none;
 }
 .logo:hover {
-  opacity: 0.82;
   transform: translateY(-1px);
+}
+.logo-brand {
+  color: var(--blue);
+}
+.logo-brand:hover {
+  color: #1e4fff; /* Brighter, vibrant electric blue on hover (not faded) */
+}
+.logo-light {
+  color: #ffffff;
+}
+.logo-light:hover {
+  color: #b8caff; /* Brighter soft glow on hover in dark footer */
 }
 .logo-wrapper {
   display: inline-flex;
@@ -92,12 +103,6 @@ img {
   display: block;
   height: auto;
   transition: transform 0.25s ease;
-}
-.logo-brand {
-  color: var(--blue);
-}
-.logo-light {
-  color: #ffffff;
 }
 .logo-sm .logo-svg {
   height: 22px;
