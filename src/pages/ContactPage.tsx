@@ -1,19 +1,13 @@
-import { useState, type FormEvent } from "react";
+import { useState } from "react";
 import Reveal from "../components/Reveal";
 
-export default function ContactPage() {
-  const [submitted, setSubmitted] = useState(false);
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    category: "Viby Solution (For Businesses)",
-    message: "",
-  });
+const GOOGLE_FORM_EMBED_URL =
+  "https://docs.google.com/forms/d/e/1FAIpQLSca9y9YLdtGQqdCIPYLieQAvKtYibNAW5B7BqtdIU-31gRjzw/viewform?embedded=true";
+const GOOGLE_FORM_DIRECT_URL =
+  "https://docs.google.com/forms/d/e/1FAIpQLSca9y9YLdtGQqdCIPYLieQAvKtYibNAW5B7BqtdIU-31gRjzw/viewform";
 
-  const handleSubmit = (e: FormEvent) => {
-    e.preventDefault();
-    setSubmitted(true);
-  };
+export default function ContactPage() {
+  const [iframeLoaded, setIframeLoaded] = useState(false);
 
   return (
     <div className="page contact-page">
@@ -102,112 +96,50 @@ export default function ContactPage() {
             </div>
           </Reveal>
 
-          {/* Right Column: Interactive Form */}
+          {/* Right Column: Embedded Google Form */}
           <Reveal delay={1} className="contact-form-column">
-            <div className="form-card">
-              <span className="form-label">START A CONVERSATION</span>
-              <h3>Send a message</h3>
-              <p>
-                Fill in the details below and we&rsquo;ll get back to you promptly.
-              </p>
+            <div className="form-card google-form-card">
+              <div className="google-form-header">
+                <span className="form-label">START A CONVERSATION</span>
+                <h3>Inquiry &amp; Project Form</h3>
+                <p>
+                  Fill out the form below with your requirements and we&rsquo;ll get back to you promptly.
+                </p>
+              </div>
 
-              {submitted ? (
-                <div className="form-success-message">
-                  <div className="success-icon">✓</div>
-                  <h4>Thank you!</h4>
-                  <p>
-                    Your message has been recorded. We will review your inquiry and reach back out
-                    shortly.
-                  </p>
-                  <button
-                    type="button"
-                    className="button button-blue"
-                    onClick={() => {
-                      setSubmitted(false);
-                      setFormData({
-                        name: "",
-                        email: "",
-                        category: "Viby Solution (For Businesses)",
-                        message: "",
-                      });
-                    }}
-                  >
-                    Send another message
-                  </button>
-                </div>
-              ) : (
-                <form onSubmit={handleSubmit} className="contact-form">
-                  <div className="form-group">
-                    <label htmlFor="name">Your Name *</label>
-                    <input
-                      id="name"
-                      type="text"
-                      required
-                      placeholder="e.g. Alex Sharma"
-                      value={formData.name}
-                      onChange={(e) =>
-                        setFormData({ ...formData, name: e.target.value })
-                      }
-                    />
+              <div className="google-form-wrapper">
+                {!iframeLoaded && (
+                  <div className="google-form-loading" aria-live="polite">
+                    <div className="loading-spinner" />
+                    <span>Loading inquiry form...</span>
                   </div>
+                )}
+                <iframe
+                  src={GOOGLE_FORM_EMBED_URL}
+                  title="Viby Solution Inquiry Form"
+                  className="google-form-iframe"
+                  width="100%"
+                  height="780"
+                  frameBorder="0"
+                  marginHeight={0}
+                  marginWidth={0}
+                  onLoad={() => setIframeLoaded(true)}
+                >
+                  Loading form…
+                </iframe>
+              </div>
 
-                  <div className="form-group">
-                    <label htmlFor="email">Email Address *</label>
-                    <input
-                      id="email"
-                      type="email"
-                      required
-                      placeholder="e.g. alex@example.com"
-                      value={formData.email}
-                      onChange={(e) =>
-                        setFormData({ ...formData, email: e.target.value })
-                      }
-                    />
-                  </div>
-
-                  <div className="form-group">
-                    <label htmlFor="category">Inquiry Area</label>
-                    <select
-                      id="category"
-                      value={formData.category}
-                      onChange={(e) =>
-                        setFormData({ ...formData, category: e.target.value })
-                      }
-                    >
-                      <option value="Viby Solution (For Businesses)">
-                        Viby Solution (For Businesses — Tech / Marketing / Growth)
-                      </option>
-                      <option value="Viby Academy (For Students & Freshers)">
-                        Viby Academy (Internships &amp; Training)
-                      </option>
-                      <option value="Viby Ventures (For Ideas & Startups)">
-                        Viby Ventures (Ideas, Products &amp; Ventures)
-                      </option>
-                      <option value="General Conversation">
-                        General Conversation / Partnerships
-                      </option>
-                    </select>
-                  </div>
-
-                  <div className="form-group">
-                    <label htmlFor="message">How can we help? *</label>
-                    <textarea
-                      id="message"
-                      rows={5}
-                      required
-                      placeholder="Tell us about what you're building, what problems you're trying to solve, or what you'd like to learn..."
-                      value={formData.message}
-                      onChange={(e) =>
-                        setFormData({ ...formData, message: e.target.value })
-                      }
-                    />
-                  </div>
-
-                  <button type="submit" className="button button-blue form-submit-btn">
-                    Send Message <span>↗</span>
-                  </button>
-                </form>
-              )}
+              <div className="google-form-footer">
+                <span>Trouble viewing or submitting the form?</span>
+                <a
+                  href={GOOGLE_FORM_DIRECT_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="google-form-external-link"
+                >
+                  Open in Google Forms <span>↗</span>
+                </a>
+              </div>
             </div>
           </Reveal>
         </div>
