@@ -46,7 +46,7 @@ export default function Header({ currentRoute = "/" }: { currentRoute?: RoutePat
         </a>
       </nav>
 
-      <a className="button button-dark nav-cta" href="#/contact">
+      <a className="button button-blue nav-cta" href="#/contact">
         Let&rsquo;s talk <span>↗</span>
       </a>
 

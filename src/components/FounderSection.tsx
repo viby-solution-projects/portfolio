@@ -7,7 +7,6 @@ export default function FounderSection() {
         <h2>
           Built by <span>Het Chag.</span>
         </h2>
-        <p>Founder, Viby Solution</p>
       </div>
 
       <Reveal className="founder-card-layout">

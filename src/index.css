@@ -105,37 +105,40 @@ img {
   transition: transform 0.25s ease;
 }
 .logo-sm .logo-svg {
-  height: 22px;
+  height: 24px;
   width: auto;
 }
 .logo-md .logo-svg {
-  height: 28px;
+  height: 35px;
   width: auto;
 }
 .logo-lg .logo-svg {
-  height: 36px;
+  height: 44px;
   width: auto;
 }
 
 .site-nav {
   display: flex;
-  gap: 32px;
-  margin-left: 50px;
-  font: 11px "DM Mono", monospace;
+  align-items: center;
+  gap: clamp(20px, 2.5vw, 34px);
+  margin-left: clamp(24px, 3.5vw, 48px);
+  font: 13.5px "DM Mono", monospace;
+  font-weight: 500;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
 }
 .site-nav a {
   position: relative;
-  color: #33363f;
+  color: #2b2e37;
   transition: color 0.2s;
-  padding-bottom: 4px;
+  padding: 6px 0;
 }
 .site-nav a::after {
   content: "";
   position: absolute;
   left: 0;
   right: 0;
-  bottom: -4px;
+  bottom: 0px;
   height: 2px;
   background: var(--blue);
   transform: scaleX(0);
@@ -148,6 +151,12 @@ img {
 .site-nav a:hover::after,
 .site-nav a.active::after {
   transform: scaleX(1);
+}
+.nav-cta {
+  padding: 13px 24px;
+  font-size: 12.5px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
 }
 .mobile-cta-link {
   display: none;
@@ -2445,6 +2454,7 @@ p {
   .site-nav {
     gap: 16px;
     margin-left: 16px;
+    font-size: 12px;
   }
   .hero {
     grid-template-columns: 1fr;
@@ -2509,6 +2519,9 @@ p {
 @media (max-width: 650px) {
   .site-header {
     height: 70px;
+  }
+  .site-header .logo-svg {
+    height: 29px;
   }
   .site-nav,
   .nav-cta {

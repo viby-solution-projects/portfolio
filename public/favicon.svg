@@ -1,15 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="150 150 1200 1200" width="100%" height="100%" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
-  <style>
-    .viby-path {
-      fill: #0331d0;
-    }
-    @media (prefers-color-scheme: dark) {
-      .viby-path {
-        fill: #3b76ff;
-      }
-    }
-  </style>
-  <g class="viby-path">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" width="1200" height="1200" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+  <rect width="1200" height="1200" rx="220" fill="#0331d0" />
+  <g fill="#ffffff" stroke="#ffffff" stroke-width="26" stroke-linejoin="round" stroke-linecap="round" transform="translate(600, 600) scale(0.93) translate(-750, -750)">
     <g transform="translate(174.703144, 890.249903)">
       <path d="M 184.796875 -95.703125 L 270.59375 -394.90625 L 356.40625 -394.90625 L 222.203125 0 L 143.546875 0 L 10.453125 -394.90625 L 99 -394.90625 L 183.703125 -95.703125 Z M 184.796875 -95.703125" />
     </g>
