@@ -1,5 +1,7 @@
+import { useState } from "react";
 import Reveal from "./Reveal";
 import { cn } from "../utils/cn";
+import ProductEditingGallery, { GALLERY_ITEMS } from "./ProductEditingGallery";
 import brokerstreetsImg from "../assets/brokerstreets.png";
 import kizzoImg from "../assets/kizzo.png";
 import diamondFinanceImg from "../assets/diamondfinance.png";
@@ -127,66 +129,113 @@ function LiveBrowser({ project }: { project: Project }) {
 }
 
 export default function Work({ showAll = false }: { showAll?: boolean }) {
+  // Web Development is selected as default
+  const [activeSubsection, setActiveSubsection] = useState<"web-dev" | "photo-editing">("web-dev");
+
   return (
     <section className="section work" id="work">
+      {/* Work Section Header & Subsection Selector */}
       <div className="section-heading work-heading">
         <div>
+          {/* <span className="subsection-badge">[ OUR WORK ]</span> */}
           <h2>
-            Ideas are easy.
-            <br />
-            <span>Execution is the work.</span>
+            {activeSubsection === "web-dev" ? (
+              <>
+                Ideas are easy.
+                <br />
+                <span>Execution is the work.</span>
+              </>
+            ) : (
+              <>
+                AI Generated Imagery.
+                <br />
+                <span>Commercial Product Showcase.</span>
+              </>
+            )}
           </h2>
-          <p>
-            We&rsquo;ve worked on projects across technology, e-commerce, marketing and business
-            development.
+          <p className="pt-4">
+            {activeSubsection === "web-dev"
+              ? "We’ve engineered digital platforms, web applications, fintech ecosystems, and e-commerce infrastructure."
+              : "A curated showcase of high-end AI product imagery, luxury product renders, and hyper-realistic commercial visuals."}
           </p>
+        </div>
+
+        {/* Subsection Switcher Tabs */}
+        <div className="work-subsections-nav" role="tablist" aria-label="Work Subsections">
+          <button
+            type="button"
+            role="tab"
+            aria-selected={activeSubsection === "web-dev"}
+            onClick={() => setActiveSubsection("web-dev")}
+            className={cn("work-tab-btn", activeSubsection === "web-dev" && "active")}
+          >
+            <span className="tab-indicator" />
+            <span>Web Development</span>
+            <span className="tab-count-badge">{PROJECTS.length}</span>
+          </button>
+          <button
+            type="button"
+            role="tab"
+            aria-selected={activeSubsection === "photo-editing"}
+            onClick={() => setActiveSubsection("photo-editing")}
+            className={cn("work-tab-btn", activeSubsection === "photo-editing" && "active")}
+          >
+            <span className="tab-indicator" />
+            <span>AI Images</span>
+            <span className="tab-count-badge">{GALLERY_ITEMS.length}</span>
+          </button>
         </div>
       </div>
 
-      <div className="projects-grid-2x2">
-        {PROJECTS.map((project, i) => (
-          <Reveal
-            as="article"
-            key={project.name}
-            delay={(i % 2) as 0 | 1}
-            className={cn("project", "project-featured")}
-          >
-            <LiveBrowser project={project} />
-            <div className="project-info">
-              <div>
-                <div className="project-meta-line">
-                  <span className="project-cat">{project.category}</span>
-                  <span className="project-status">Live Project</span>
+      {/* Subsection Content */}
+      {activeSubsection === "web-dev" ? (
+        <div className="projects-grid-2x2">
+          {PROJECTS.map((project, i) => (
+            <Reveal
+              as="article"
+              key={project.name}
+              delay={(i % 2) as 0 | 1}
+              className={cn("project", "project-featured")}
+            >
+              <LiveBrowser project={project} />
+              <div className="project-info">
+                <div>
+                  <div className="project-meta-line">
+                    <span className="project-cat">{project.category}</span>
+                    <span className="project-status">Live Project</span>
+                  </div>
+                  <p>{project.name}</p>
+                  <span>{project.desc}</span>
                 </div>
-                <p>{project.name}</p>
-                <span>{project.desc}</span>
+                <ul>
+                  {project.tags.map((tag) => (
+                    <li key={tag}>{tag}</li>
+                  ))}
+                </ul>
+                <a
+                  href={project.fullUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`Visit ${project.name} at ${project.url}`}
+                  title={`Open ${project.url}`}
+                >
+                  ↗
+                </a>
               </div>
-              <ul>
-                {project.tags.map((tag) => (
-                  <li key={tag}>{tag}</li>
-                ))}
-              </ul>
-              <a
-                href={project.fullUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label={`Visit ${project.name} at ${project.url}`}
-                title={`Open ${project.url}`}
-              >
-                ↗
-              </a>
-            </div>
-          </Reveal>
-        ))}
-      </div>
+            </Reveal>
+          ))}
+        </div>
+      ) : (
+        <ProductEditingGallery />
+      )}
 
       {showAll && (
         <Reveal className="future-projects-card">
           <span className="future-tag">FUTURE PROJECTS</span>
           <h3>More coming soon.</h3>
           <p>
-            We&rsquo;re constantly working on new client projects and internal ventures. Some will
-            make it here. Some will become something much bigger.
+            We&rsquo;re constantly working on new client projects, internal ventures, and creative
+            shoots. Some will make it here. Some will become something much bigger.
           </p>
         </Reveal>
       )}
@@ -194,7 +243,7 @@ export default function Work({ showAll = false }: { showAll?: boolean }) {
       {!showAll && (
         <div className="section-footer-action">
           <a className="button button-blue" href="#/work">
-            View Our Work <span>→</span>
+            View All Work <span>→</span>
           </a>
         </div>
       )}

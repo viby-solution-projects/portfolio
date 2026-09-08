@@ -94,6 +94,16 @@ export default function ContactPage() {
                 Navsari, Gujarat · Headquarters
               </div>
             </div>
+            <iframe
+              title="Viby Solutions Location"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3372.392263581632!2d72.94266407471179!3d20.92781329123917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be0f701651b0cc9%3A0x9bf3898f65da0b60!2scentral%20business%20hub%2C%20140%2C%20Gandevi%20Rd%2C%20opp.%20Mahendra%20brother%E2%80%99s%2C%20Vimal%20Park%2C%20Majur%20Mahajan%20Society%2C%20Jamalpore%2C%20Navsari%2C%20Chhapra%20Part%2C%20Gujarat%20396427!5e1!3m2!1sen!2sin!4v1788846703199!5m2!1sen!2sin"
+              width="100%"
+              height="300"
+              style={{ border: 0, borderRadius: "8px", marginTop: "16px" }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="strict-origin-when-cross-origin"
+            />
           </Reveal>
 
           {/* Right Column: Embedded Google Form */}

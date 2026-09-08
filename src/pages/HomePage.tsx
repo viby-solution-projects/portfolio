@@ -1,4 +1,5 @@
 import Hero from "../components/Hero";
+import NavsariSection from "../components/NavsariSection";
 import TechStrip from "../components/TechStrip";
 import EcosystemSection from "../components/EcosystemSection";
 import Services from "../components/Services";
@@ -11,6 +12,7 @@ export default function HomePage() {
   return (
     <>
       <Hero />
+      <NavsariSection />
       <TechStrip />
       <EcosystemSection />
       <Services />

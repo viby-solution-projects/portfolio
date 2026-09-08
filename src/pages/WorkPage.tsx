@@ -12,8 +12,8 @@ export default function WorkPage() {
             Things we&rsquo;ve been <em>building.</em>
           </h1>
           <p className="page-hero-summary">
-            A selection of projects across technology, e-commerce, marketing and business
-            development.
+            A selection of projects across digital technology, e-commerce platforms, commercial
+            product photo editing, and brand growth.
           </p>
         </Reveal>
       </section>

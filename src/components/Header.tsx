@@ -5,11 +5,11 @@ import type { RoutePath } from "../utils/useRoute";
 
 const NAV_LINKS: { label: string; href: string; path: RoutePath }[] = [
   { label: "Home", href: "#/", path: "/" },
+  { label: "Our Work", href: "#/work", path: "/work" },
   { label: "Solution", href: "#/solution", path: "/solution" },
   { label: "Academy", href: "#/academy", path: "/academy" },
   { label: "Ventures", href: "#/ventures", path: "/ventures" },
   { label: "About", href: "#/about", path: "/about" },
-  { label: "Work", href: "#/work", path: "/work" },
 ];
 
 export default function Header({ currentRoute = "/" }: { currentRoute?: RoutePath }) {

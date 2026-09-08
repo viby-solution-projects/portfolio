@@ -1,14 +1,14 @@
-import { useEffect, useRef, useState, type ReactNode } from "react";
+import { useEffect, useRef, useState, type ReactNode, type HTMLAttributes } from "react";
 import { cn } from "../utils/cn";
 
-type RevealProps = {
+type RevealProps = HTMLAttributes<HTMLElement> & {
   children: ReactNode;
   delay?: 0 | 1 | 2;
   className?: string;
-  as?: "div" | "li" | "article";
+  as?: "div" | "li" | "article" | "section" | "header" | "button";
 };
 
-export default function Reveal({ children, delay = 0, className, as = "div" }: RevealProps) {
+export default function Reveal({ children, delay = 0, className, as = "div", ...rest }: RevealProps) {
   const ref = useRef<HTMLElement | null>(null);
   const [visible, setVisible] = useState(false);
 
@@ -35,6 +35,7 @@ export default function Reveal({ children, delay = 0, className, as = "div" }: R
     <Tag
       ref={ref as never}
       className={cn("reveal", visible && "visible", delay === 1 && "delay-1", delay === 2 && "delay-2", className)}
+      {...rest}
     >
       {children}
     </Tag>
