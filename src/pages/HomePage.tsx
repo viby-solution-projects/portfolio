@@ -5,6 +5,7 @@ import EcosystemSection from "../components/EcosystemSection";
 import Services from "../components/Services";
 import Reasons from "../components/Reasons";
 import Work from "../components/Work";
+import AiShowcaseSection from "../components/AiShowcaseSection";
 import FounderSection from "../components/FounderSection";
 import Cta from "../components/Cta";
 
@@ -17,7 +18,8 @@ export default function HomePage() {
       <EcosystemSection />
       <Services />
       <Reasons />
-      <Work />
+      <Work showToggle={false} />
+      <AiShowcaseSection />
       <FounderSection />
       <Cta />
     </>

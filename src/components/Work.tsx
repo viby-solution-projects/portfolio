@@ -128,7 +128,13 @@ function LiveBrowser({ project }: { project: Project }) {
   );
 }
 
-export default function Work({ showAll = false }: { showAll?: boolean }) {
+export default function Work({
+  showAll = false,
+  showToggle = true,
+}: {
+  showAll?: boolean;
+  showToggle?: boolean;
+}) {
   // Web Development is selected as default
   const [activeSubsection, setActiveSubsection] = useState<"web-dev" | "photo-editing">("web-dev");
 
@@ -139,7 +145,7 @@ export default function Work({ showAll = false }: { showAll?: boolean }) {
         <div>
           {/* <span className="subsection-badge">[ OUR WORK ]</span> */}
           <h2>
-            {activeSubsection === "web-dev" ? (
+            {!showToggle || activeSubsection === "web-dev" ? (
               <>
                 Ideas are easy.
                 <br />
@@ -154,41 +160,43 @@ export default function Work({ showAll = false }: { showAll?: boolean }) {
             )}
           </h2>
           <p className="pt-4">
-            {activeSubsection === "web-dev"
+            {!showToggle || activeSubsection === "web-dev"
               ? "We’ve engineered digital platforms, web applications, fintech ecosystems, and e-commerce infrastructure."
               : "A curated showcase of high-end AI product imagery, luxury product renders, and hyper-realistic commercial visuals."}
           </p>
         </div>
 
         {/* Subsection Switcher Tabs */}
-        <div className="work-subsections-nav" role="tablist" aria-label="Work Subsections">
-          <button
-            type="button"
-            role="tab"
-            aria-selected={activeSubsection === "web-dev"}
-            onClick={() => setActiveSubsection("web-dev")}
-            className={cn("work-tab-btn", activeSubsection === "web-dev" && "active")}
-          >
-            <span className="tab-indicator" />
-            <span>Web Development</span>
-            <span className="tab-count-badge">{PROJECTS.length}</span>
-          </button>
-          <button
-            type="button"
-            role="tab"
-            aria-selected={activeSubsection === "photo-editing"}
-            onClick={() => setActiveSubsection("photo-editing")}
-            className={cn("work-tab-btn", activeSubsection === "photo-editing" && "active")}
-          >
-            <span className="tab-indicator" />
-            <span>AI Images</span>
-            <span className="tab-count-badge">{GALLERY_ITEMS.length}</span>
-          </button>
-        </div>
+        {showToggle && (
+          <div className="work-subsections-nav" role="tablist" aria-label="Work Subsections">
+            <button
+              type="button"
+              role="tab"
+              aria-selected={activeSubsection === "web-dev"}
+              onClick={() => setActiveSubsection("web-dev")}
+              className={cn("work-tab-btn", activeSubsection === "web-dev" && "active")}
+            >
+              <span className="tab-indicator" />
+              <span>Web Development</span>
+              <span className="tab-count-badge">{PROJECTS.length}</span>
+            </button>
+            <button
+              type="button"
+              role="tab"
+              aria-selected={activeSubsection === "photo-editing"}
+              onClick={() => setActiveSubsection("photo-editing")}
+              className={cn("work-tab-btn", activeSubsection === "photo-editing" && "active")}
+            >
+              <span className="tab-indicator" />
+              <span>AI Images</span>
+              <span className="tab-count-badge">{GALLERY_ITEMS.length}</span>
+            </button>
+          </div>
+        )}
       </div>
 
       {/* Subsection Content */}
-      {activeSubsection === "web-dev" ? (
+      {!showToggle || activeSubsection === "web-dev" ? (
         <div className="projects-grid-2x2">
           {PROJECTS.map((project, i) => (
             <Reveal
