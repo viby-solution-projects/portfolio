@@ -1,11 +1,13 @@
-import { useState } from "react";
+import { useState, lazy, Suspense } from "react";
 import Reveal from "./Reveal";
 import { cn } from "../utils/cn";
-import ProductEditingGallery, { GALLERY_ITEMS } from "./ProductEditingGallery";
 import brokerstreetsImg from "../assets/brokerstreets.png";
 import kizzoImg from "../assets/kizzo.png";
 import diamondFinanceImg from "../assets/diamondfinance.png";
 import bharatLaunchImg from "../assets/bharatlaunch.png";
+
+const ProductEditingGallery = lazy(() => import("./ProductEditingGallery"));
+const GALLERY_COUNT = 32;
 
 type Project = {
   name: string;
@@ -116,6 +118,7 @@ function LiveBrowser({ project }: { project: Project }) {
           alt={project.alt}
           className="browser-screen-img"
           loading="lazy"
+          decoding="async"
         />
         <div className="browser-screen-overlay">
           <span className="overlay-badge">
@@ -189,7 +192,7 @@ export default function Work({
             >
               <span className="tab-indicator" />
               <span>AI Images</span>
-              <span className="tab-count-badge">{GALLERY_ITEMS.length}</span>
+              <span className="tab-count-badge">{GALLERY_COUNT}</span>
             </button>
           </div>
         )}
@@ -234,7 +237,9 @@ export default function Work({
           ))}
         </div>
       ) : (
-        <ProductEditingGallery />
+        <Suspense fallback={<div className="photo-gallery-loading" style={{ minHeight: "300px" }} />}>
+          <ProductEditingGallery />
+        </Suspense>
       )}
 
       {showAll && (

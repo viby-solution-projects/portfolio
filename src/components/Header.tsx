@@ -23,32 +23,30 @@ export default function Header({ currentRoute = "/" }: { currentRoute?: RoutePat
         className={cn("site-nav", open && "open")}
         aria-label="Primary navigation"
       >
-        {NAV_LINKS.map((link) => {
-          const isActive = currentRoute === link.path;
-          return (
-            <a
-              key={link.href}
-              href={link.href}
-              className={cn(isActive && "active")}
-              onClick={() => setOpen(false)}
-            >
-              {link.label}
-            </a>
-          );
-        })}
-        {/* Mobile-only contact link in drawer */}
+        <div className="site-nav-links">
+          {NAV_LINKS.map((link) => {
+            const isActive = currentRoute === link.path;
+            return (
+              <a
+                key={link.href}
+                href={link.href}
+                className={cn(isActive && "active")}
+                onClick={() => setOpen(false)}
+              >
+                {link.label}
+              </a>
+            );
+          })}
+        </div>
+
         <a
-          className="mobile-cta-link"
+          className="button button-blue nav-cta"
           href="#/contact"
           onClick={() => setOpen(false)}
         >
-          Let&rsquo;s Talk <span>↗</span>
+          Let&rsquo;s talk <span>↗</span>
         </a>
       </nav>
-
-      <a className="button button-blue nav-cta" href="#/contact">
-        Let&rsquo;s talk <span>↗</span>
-      </a>
 
       <button
         className="menu-button"

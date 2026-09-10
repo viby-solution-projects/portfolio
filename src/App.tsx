@@ -1,15 +1,18 @@
+import { lazy, Suspense } from "react";
 import { useRoute } from "./utils/useRoute";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
-// Pages
+// Eagerly load primary HomePage so initial render is instantaneous with zero footer flash
 import HomePage from "./pages/HomePage";
-import SolutionPage from "./pages/SolutionPage";
-import AcademyPage from "./pages/AcademyPage";
-import VenturesPage from "./pages/VenturesPage";
-import AboutPage from "./pages/AboutPage";
-import WorkPage from "./pages/WorkPage";
-import ContactPage from "./pages/ContactPage";
+
+// Lazy-loaded secondary pages on demand
+const SolutionPage = lazy(() => import("./pages/SolutionPage"));
+const AcademyPage = lazy(() => import("./pages/AcademyPage"));
+const VenturesPage = lazy(() => import("./pages/VenturesPage"));
+const AboutPage = lazy(() => import("./pages/AboutPage"));
+const WorkPage = lazy(() => import("./pages/WorkPage"));
+const ContactPage = lazy(() => import("./pages/ContactPage"));
 
 export default function App() {
   const { route } = useRoute();
@@ -40,8 +43,10 @@ export default function App() {
         Skip to content
       </a>
       <Header currentRoute={route} />
-      <main id="main-content" tabIndex={-1}>
-        {renderCurrentPage()}
+      <main id="main-content" tabIndex={-1} style={{ minHeight: "calc(100vh - 78px)" }}>
+        <Suspense fallback={<div style={{ minHeight: "calc(100vh - 78px)" }} />}>
+          {renderCurrentPage()}
+        </Suspense>
       </main>
       <Footer />
     </>

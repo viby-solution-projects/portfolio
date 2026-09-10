@@ -120,20 +120,26 @@ img {
 .site-nav {
   display: flex;
   align-items: center;
-  gap: clamp(20px, 2.5vw, 34px);
+  justify-content: space-between;
+  flex: 1;
   margin-left: clamp(24px, 3.5vw, 48px);
+}
+.site-nav-links {
+  display: flex;
+  align-items: center;
+  gap: clamp(20px, 2.5vw, 34px);
   font: 13.5px "DM Mono", monospace;
   font-weight: 500;
   letter-spacing: 0.04em;
   text-transform: uppercase;
 }
-.site-nav a {
+.site-nav-links a {
   position: relative;
   color: #2b2e37;
   transition: color 0.2s;
   padding: 6px 0;
 }
-.site-nav a::after {
+.site-nav-links a::after {
   content: "";
   position: absolute;
   left: 0;
@@ -144,22 +150,20 @@ img {
   transform: scaleX(0);
   transition: transform 0.25s cubic-bezier(0.2, 1, 0.3, 1);
 }
-.site-nav a:hover,
-.site-nav a.active {
+.site-nav-links a:hover,
+.site-nav-links a.active {
   color: var(--blue);
 }
-.site-nav a:hover::after,
-.site-nav a.active::after {
+.site-nav-links a:hover::after,
+.site-nav-links a.active::after {
   transform: scaleX(1);
 }
 .nav-cta {
+  margin-left: auto;
   padding: 13px 24px;
   font-size: 12.5px;
   font-weight: 600;
   letter-spacing: 0.04em;
-}
-.mobile-cta-link {
-  display: none;
 }
 
 .menu-button {
@@ -908,7 +912,7 @@ p {
 }
 .who-tag {
   font: 10px "DM Mono", monospace;
-  color: var(--blue);
+  color: #ffffff;
   letter-spacing: 0.1em;
 }
 .who-header h3 {
@@ -2885,8 +2889,10 @@ p {
 
 @media (max-width: 900px) {
   .site-nav {
-    gap: 16px;
     margin-left: 16px;
+  }
+  .site-nav-links {
+    gap: 16px;
     font-size: 12px;
   }
   .hero {
@@ -2918,8 +2924,10 @@ p {
     grid-template-columns: repeat(2, 1fr);
     gap: 14px;
   }
-  .project-list {
-    grid-template-columns: 1fr;
+  .project-list,
+  .projects-grid-2x2 {
+    grid-template-columns: 1fr !important;
+    gap: 32px;
   }
   .reasons-top {
     grid-template-columns: 1fr;
@@ -2960,8 +2968,7 @@ p {
   .site-header .logo-svg {
     height: 29px;
   }
-  .site-nav,
-  .nav-cta {
+  .site-nav {
     display: none;
   }
   .menu-button {
@@ -2975,23 +2982,27 @@ p {
     left: 0;
     right: 0;
     margin: 0;
-    padding: 24px;
-    background: #fff;
+    padding: 32px 24px 36px;
+    background: #ffffff;
     border-bottom: 1px solid var(--line);
     flex-direction: column;
-    gap: 16px;
+    align-items: center;
+    gap: 24px;
     box-shadow: 0 20px 40px rgba(17, 17, 17, 0.1);
   }
-  .mobile-cta-link {
-    display: inline-flex;
+  .site-nav.open .site-nav-links {
+    flex-direction: column;
     align-items: center;
-    gap: 8px;
-    margin-top: 10px;
-    padding: 10px 16px;
-    background: var(--blue);
-    color: #fff !important;
-    border-radius: 6px;
-    font-weight: 600;
+    gap: 20px;
+    width: 100%;
+  }
+  .site-nav.open .nav-cta {
+    display: inline-flex;
+    margin-left: 0;
+    margin-top: 6px;
+    width: 100%;
+    max-width: 160px;
+    justify-content: center;
   }
 
   .hero h1 {
@@ -3071,51 +3082,50 @@ p {
     aspect-ratio: 16 / 10;
   }
   .browser-live .browser-bar {
-    padding: 0 6px;
-    height: 32px;
+    padding: 0 10px;
+    height: 36px;
   }
   .browser-address {
-    display: none;
+    display: flex;
+    max-width: 170px;
   }
   .browser-visit-btn {
-    padding: 2px 6px;
-    font-size: 8px;
+    padding: 3px 8px;
+    font-size: 9px;
   }
   .browser-visit-btn .live-text {
-    display: none;
+    display: inline;
   }
   .projects-grid-2x2 {
-    grid-template-columns: repeat(2, 1fr) !important;
-    gap: 12px;
+    grid-template-columns: 1fr !important;
+    gap: 28px;
   }
   .project-info {
-    padding-top: 8px;
-    gap: 6px;
+    padding-top: 14px;
+    gap: 8px;
   }
   .project-info p {
-    font-size: 14px;
-    margin: 0 0 2px;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0 0 4px;
   }
   .project-info > div > span {
-    font-size: 11px;
-    line-height: 1.4;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
+    font-size: 13.5px;
+    line-height: 1.5;
+    color: var(--muted);
+    display: block;
   }
   .project-info ul {
-    gap: 4px;
-    padding-top: 4px;
+    gap: 6px;
+    padding-top: 6px;
   }
   .project-info li {
-    font-size: 7px;
-    padding: 2px 5px;
+    font-size: 8.5px;
+    padding: 3px 8px;
   }
   .overlay-badge {
-    padding: 4px 10px;
-    font-size: 9px;
+    padding: 6px 12px;
+    font-size: 10px;
   }
 
   .photo-gallery-grid {

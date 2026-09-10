@@ -440,6 +440,7 @@ export default function ProductEditingGallery() {
                 alt={item.alt}
                 className="photo-gallery-img"
                 loading="lazy"
+                decoding="async"
               />
             </div>
           </Reveal>
@@ -494,6 +495,7 @@ export default function ProductEditingGallery() {
                 src={selectedItem.image}
                 alt={selectedItem.alt}
                 className="photo-lightbox-img"
+                decoding="async"
               />
 
               {/* Navigation Arrows */}

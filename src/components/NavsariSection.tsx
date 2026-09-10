@@ -64,6 +64,7 @@ export default function NavsariSection() {
                 alt="Navsari - The City of Opportunities, Our City Our Pride"
                 className="navsari-banner-img"
                 loading="lazy"
+                decoding="async"
               />
             </div>
           </div>
