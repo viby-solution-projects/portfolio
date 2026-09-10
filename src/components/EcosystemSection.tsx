@@ -31,13 +31,11 @@ export default function EcosystemSection() {
   return (
     <section className="section ecosystem-section" id="ecosystem">
       <div className="section-heading">
-        <div>
-          <h2>
-            One company.
-            <br />
-            <span>Three ways to create impact.</span>
-          </h2>
-        </div>
+        <h2>
+          One company.
+          <br />
+          <span>Three ways to create impact.</span>
+        </h2>
         <p>A company built around three ideas: Solve. Learn. Build.</p>
       </div>
 
