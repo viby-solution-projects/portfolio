@@ -2955,7 +2955,15 @@ p {
     padding-bottom: 24px;
   }
   .contact-layout-grid {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+  }
+  .contact-form-column {
+    order: 1;
+  }
+  .contact-info-column {
+    order: 2;
   }
   .cta {
     grid-template-columns: 1fr;
@@ -3330,6 +3338,70 @@ p {
 @media (max-width: 960px) {
   .navsari-pills {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .navsari-section {
+    padding: 48px 18px;
+  }
+  .navsari-header {
+    margin-bottom: 24px;
+  }
+  .navsari-pills {
+    gap: 12px;
+    margin-bottom: 24px;
+  }
+  .navsari-banner-card {
+    border-radius: 16px;
+  }
+  .navsari-banner-img-wrap {
+    min-height: 240px;
+  }
+  .navsari-banner-img {
+    height: clamp(240px, 62vw, 320px);
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .navsari-section {
+    padding: 40px 14px;
+  }
+  .navsari-banner-card {
+    border-radius: 14px;
+  }
+  .navsari-banner-img-wrap {
+    min-height: 250px;
+  }
+  .navsari-banner-img {
+    height: 270px;
+    object-position: center;
+  }
+}
+
+@media (max-width: 650px) {
+  .contact-main-section {
+    padding: 36px 14px;
+  }
+  .google-form-card {
+    padding: 22px 0 16px;
+    box-shadow: 6px 6px 0 var(--ink);
+    overflow: hidden;
+  }
+  .google-form-header {
+    padding: 0 16px;
+  }
+  .google-form-wrapper {
+    border-radius: 0;
+    border-left: 0;
+    border-right: 0;
+    width: 100%;
+  }
+  .google-form-footer {
+    margin: 14px 16px 0;
+    padding-top: 12px;
   }
 }
 
