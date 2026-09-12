@@ -3,9 +3,14 @@ import Reveal from "./Reveal";
 
 export default function InstagramReelsSection() {
   useEffect(() => {
-    // Load SociableKit widget script
+    const scriptUrl = "https://widgets.sociablekit.com/instagram-reels/widget.js";
+    const existingScript = document.querySelector(`script[src="${scriptUrl}"]`);
+    if (existingScript) {
+      existingScript.remove();
+    }
+
     const script = document.createElement("script");
-    script.src = "https://widgets.sociablekit.com/instagram-reels/widget.js";
+    script.src = scriptUrl;
     script.defer = true;
     document.body.appendChild(script);
 
@@ -29,3 +34,4 @@ export default function InstagramReelsSection() {
     </section>
   );
 }
+
