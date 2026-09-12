@@ -1,5 +1,6 @@
 import Hero from "../components/Hero";
 import NavsariSection from "../components/NavsariSection";
+import InstagramReelsSection from "../components/InstagramReelsSection";
 import TechStrip from "../components/TechStrip";
 import EcosystemSection from "../components/EcosystemSection";
 import Services from "../components/Services";
@@ -14,6 +15,7 @@ export default function HomePage() {
     <>
       <Hero />
       <NavsariSection />
+      <InstagramReelsSection />
       <TechStrip />
       <EcosystemSection />
       <Services />
