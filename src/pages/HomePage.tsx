@@ -1,4 +1,5 @@
 import Hero from "../components/Hero";
+import BrandScroll from "../components/BrandScroll";
 import NavsariSection from "../components/NavsariSection";
 import InstagramReelsSection from "../components/InstagramReelsSection";
 import TechStrip from "../components/TechStrip";
@@ -15,6 +16,7 @@ export default function HomePage() {
     <>
       <Hero />
       <NavsariSection />
+      <BrandScroll />
       <InstagramReelsSection />
       <TechStrip />
       <EcosystemSection />

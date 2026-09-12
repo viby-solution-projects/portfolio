@@ -1,4 +1,5 @@
 import Reveal from "../components/Reveal";
+import BrandScroll from "../components/BrandScroll";
 import Work from "../components/Work";
 import Cta from "../components/Cta";
 
@@ -17,6 +18,14 @@ export default function WorkPage() {
           </p>
         </Reveal>
       </section>
+
+      {/* Infinite Brand Marquee */}
+      <BrandScroll
+        variant="compact"
+        title="Brands & Partners We Work With"
+        subtitle="Founders, businesses, and digital ecosystems powered by Viby Solution."
+        badge="PARTNER NETWORK"
+      />
 
       {/* Projects List with Future Projects enabled */}
       <Work showAll />

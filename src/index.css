@@ -626,6 +626,114 @@ p {
   to { transform: translateX(-50%); }
 }
 
+/* ============ BRAND STRIP (BEFORE INSTAGRAM SECTION - WHITE THEME) ============ */
+.brand-strip {
+  padding: 16px clamp(22px, 8vw, 130px);
+  background: #ffffff;
+  color: #111111;
+  display: flex;
+  align-items: center;
+  gap: 36px;
+  overflow: hidden;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.brand-strip > p {
+  min-width: max-content;
+  margin: 0;
+  color: #64748b;
+  font: 10px "DM Mono", monospace;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.brand-marquee {
+  flex: 1;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 6%, #000 94%, transparent 100%);
+  mask-image: linear-gradient(90deg, transparent 0%, #000 6%, #000 94%, transparent 100%);
+}
+
+.brand-marquee-track {
+  display: flex;
+  align-items: center;
+  width: max-content;
+  white-space: nowrap;
+  animation: brand-strip-marquee 45s linear infinite;
+  will-change: transform;
+}
+
+.brand-marquee:hover .brand-marquee-track {
+  animation-play-state: paused;
+}
+
+.brand-strip-group {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+  padding-right: 36px;
+}
+
+.brand-strip-item {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  opacity: 0.92;
+}
+
+.brand-strip-item:hover {
+  opacity: 1;
+  transform: translateY(-1px);
+}
+
+.brand-strip-bullet {
+  color: #94a3b8;
+  font-style: normal;
+  font-size: 8px;
+  opacity: 0.7;
+  display: inline-flex;
+  align-items: center;
+}
+
+.brand-strip-logo-box {
+  display: flex;
+  align-items: center;
+  height: 24px;
+}
+
+.brand-strip-svg {
+  height: 19px;
+  width: auto;
+  max-height: 22px;
+  display: block;
+}
+
+@keyframes brand-strip-marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 768px) {
+  .brand-strip {
+    gap: 20px;
+    padding: 14px 20px;
+  }
+  .brand-strip-group {
+    gap: 24px;
+    padding-right: 24px;
+  }
+  .brand-strip-svg {
+    height: 16px;
+  }
+}
+
 /* ============ SECTIONS COMMON ============ */
 .section {
   padding: clamp(75px, 9vw, 130px) clamp(22px, 8vw, 130px);
