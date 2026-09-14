@@ -722,23 +722,66 @@ p {
 
 @media (max-width: 768px) {
   .brand-strip {
-    gap: 20px;
-    padding: 36px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 28px 20px;
+  }
+  .brand-strip > p {
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    color: #64748b;
+    margin: 0;
+  }
+  .brand-marquee {
+    width: 100%;
+    -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 4%, #000 96%, transparent 100%);
+    mask-image: linear-gradient(90deg, transparent 0%, #000 4%, #000 96%, transparent 100%);
+  }
+  .brand-marquee-track {
+    animation: brand-strip-marquee 35s linear infinite;
   }
   .brand-strip-group {
     gap: 32px;
     padding-right: 32px;
   }
   .brand-strip-logo-box {
-    height: 44px;
+    height: 42px;
   }
   .brand-strip-svg {
-    height: 38px;
+    height: 34px;
+    max-height: 42px;
   }
   .brand-strip-bullet {
     font-size: 11px;
   }
 }
+
+@media (max-width: 480px) {
+  .brand-strip {
+    padding: 22px 14px;
+    gap: 12px;
+  }
+  .brand-strip > p {
+    font-size: 10.5px;
+    letter-spacing: 0.1em;
+  }
+  .brand-strip-group {
+    gap: 24px;
+    padding-right: 24px;
+  }
+  .brand-strip-logo-box {
+    height: 36px;
+  }
+  .brand-strip-svg {
+    height: 28px;
+    max-height: 36px;
+  }
+  .brand-strip-bullet {
+    font-size: 9px;
+  }
+}
+
 
 /* ============ SECTIONS COMMON ============ */
 .section {
