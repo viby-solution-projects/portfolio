@@ -188,18 +188,16 @@ function BrandGroup() {
   return (
     <div className="brand-strip-group">
       {GROUP_ITEMS.map((brand, idx) => (
-        <React.Fragment key={`${brand.name}-${idx}`}>
-          <a
-            href={brand.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="brand-strip-item"
-            title={`Visit ${brand.name} (${brand.domain})`}
-          >
-            <div className="brand-strip-logo-box">{brand.logo}</div>
-          </a>
-          <span className="brand-strip-bullet" aria-hidden="true">•</span>
-        </React.Fragment>
+        <a
+          key={`${brand.name}-${idx}`}
+          href={brand.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="brand-strip-item"
+          title={`Visit ${brand.name} (${brand.domain})`}
+        >
+          <div className="brand-strip-logo-box">{brand.logo}</div>
+        </a>
       ))}
     </div>
   );
