@@ -1,4 +1,6 @@
 import React from "react";
+import sagarPerfumeLogo from "../assets/sagarperfume.png";
+import kizzoLogo from "../assets/kizzo-logo.png";
 
 export interface BrandItem {
   name: string;
@@ -13,34 +15,23 @@ const BRANDS: BrandItem[] = [
     domain: "kizzo.in",
     url: "https://kizzo.in",
     logo: (
-      <svg
-        viewBox="0 0 96 22"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        className="brand-strip-svg brand-kizzo-svg"
-        aria-label="Kizzo"
-      >
-        <text
-          x="0"
-          y="18.5"
-          fill="#000E84"
-          fontFamily="'Montserrat', 'Manrope', 'Arial Black', -apple-system, sans-serif"
-          fontWeight="900"
-          fontSize="22"
-          letterSpacing="0.04em"
-        >
-          KIZZO
-        </text>
-      </svg>
+      <img
+        src={kizzoLogo}
+        alt="Kizzo"
+        className="brand-strip-img brand-kizzo-img"
+        loading="lazy"
+        decoding="async"
+      />
     ),
   },
+
   {
     name: "Broker Streets",
     domain: "brokerstreets.com",
     url: "https://brokerstreets.com",
     logo: (
       <svg
-        viewBox="0 0 165 22"
+        viewBox="0 0 136 22"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
         className="brand-strip-svg brand-brokerstreets-svg"
@@ -68,45 +59,23 @@ const BRANDS: BrandItem[] = [
     domain: "sagarperfume.com",
     url: "https://sagarperfume.com",
     logo: (
-      <svg
-        viewBox="0 0 145 22"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        className="brand-strip-svg brand-sagar-svg"
-        aria-label="Sagar Perfume"
-      >
-        <text
-          x="0"
-          y="13"
-          fill="#B45309"
-          fontFamily="'Manrope', -apple-system, BlinkMacSystemFont, sans-serif"
-          fontWeight="800"
-          fontSize="13.5"
-          letterSpacing="0.12em"
-        >
-          SAGAR<tspan fontSize="8" dy="-5">®</tspan>
-        </text>
-        <text
-          x="1"
-          y="21"
-          fill="#475569"
-          fontFamily="'DM Mono', monospace"
-          fontWeight="600"
-          fontSize="6.5"
-          letterSpacing="0.32em"
-        >
-          PERFUME
-        </text>
-      </svg>
+      <img
+        src={sagarPerfumeLogo}
+        alt="Sagar Perfume - Feel the Fragrance"
+        className="brand-strip-img brand-sagar-img"
+        loading="lazy"
+        decoding="async"
+      />
     ),
   },
+
   {
     name: "Diamond Finance",
     domain: "diamond-finance-delta.vercel.app",
     url: "https://diamond-finance-delta.vercel.app/",
     logo: (
       <svg
-        viewBox="0 0 165 22"
+        viewBox="0 0 137 22"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
         className="brand-strip-svg brand-diamond-svg"
@@ -139,7 +108,7 @@ const BRANDS: BrandItem[] = [
     url: "https://bharat-launch.vercel.app/",
     logo: (
       <svg
-        viewBox="0 0 150 22"
+        viewBox="0 0 114 22"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
         className="brand-strip-svg brand-bharatlaunch-svg"
@@ -206,6 +175,7 @@ function BrandGroup() {
 export default function BrandScroll({
   label = "Brands We've Worked With",
   className = "",
+  title,
 }: {
   label?: string;
   className?: string;
@@ -214,12 +184,13 @@ export default function BrandScroll({
   subtitle?: string;
   badge?: string;
 }) {
+  const displayLabel = title || label;
   return (
     <div
       className={`brand-strip ${className}`}
       aria-label="Brands We Have Worked With"
     >
-      <p>{label}</p>
+      <p>{displayLabel}</p>
       <div className="brand-marquee">
         <div className="brand-marquee-track">
           <BrandGroup />
