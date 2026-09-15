@@ -111,10 +111,7 @@ export default function ContactPage() {
             <div className="form-card google-form-card">
               <div className="google-form-header">
                 <span className="form-label">START A CONVERSATION</span>
-                <h3>Inquiry &amp; Project Form</h3>
-                <p>
-                  Fill out the form below with your requirements and we&rsquo;ll get back to you promptly.
-                </p>
+               
               </div>
 
               <div className="google-form-wrapper">
