@@ -1,6 +1,7 @@
 import React from "react";
 import sagarPerfumeLogo from "../assets/sagarperfume.png";
 import kizzoLogo from "../assets/kizzo-logo.png";
+import aiJaminLogo from "../assets/aijamin-logo.png";
 
 export interface BrandItem {
   name: string;
@@ -26,32 +27,17 @@ const BRANDS: BrandItem[] = [
   },
 
   {
-    name: "Broker Streets",
-    domain: "brokerstreets.com",
-    url: "https://brokerstreets.com",
+    name: "AI Jamin",
+    domain: "aijamin.in",
+    url: "https://aijamin.in",
     logo: (
-      <svg
-        viewBox="0 0 136 22"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        className="brand-strip-svg brand-brokerstreets-svg"
-        aria-label="Broker Streets"
-      >
-        <text
-          x="0"
-          y="17"
-          fontFamily="'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"
-          fontSize="16.5"
-          letterSpacing="-0.01em"
-        >
-          <tspan fill="#1D64C8" fontWeight="400">
-            BROKER{" "}
-          </tspan>
-          <tspan fill="#1D64C8" fontWeight="900">
-            STREETS
-          </tspan>
-        </text>
-      </svg>
+      <img
+        src={aiJaminLogo}
+        alt="AI Jamin"
+        className="brand-strip-img brand-aijamin-img"
+        loading="lazy"
+        decoding="async"
+      />
     ),
   },
   {

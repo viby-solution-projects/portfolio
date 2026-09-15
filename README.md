@@ -80,9 +80,9 @@ Viby operates on an iterative, results-driven process:
 
 ## 🚀 Featured Selected Work
 
-### 🏢 [Broker Streets](https://brokerstreets.com)
+### 🏢 [AI Jamin](https://aijamin.in)
 *PropTech · Digital Marketplace · Zero Brokerage*
-- **Platform**: [`brokerstreets.com`](https://brokerstreets.com)
+- **Platform**: [`aijamin.in`](https://aijamin.in)
 - **Overview**: Gujarat's trusted digital marketplace for Agricultural and Non-Agricultural (NA) land. Built to eliminate middlemen, listing fees, and subscription charges with verified land listings and government record integrations.
 
 ### 🛍️ [Kizzo](https://kizzo.in)

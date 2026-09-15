@@ -1,7 +1,7 @@
 import { useState, lazy, Suspense } from "react";
 import Reveal from "./Reveal";
 import { cn } from "../utils/cn";
-import brokerstreetsImg from "../assets/brokerstreets.png";
+import aiJaminImg from "../assets/aijamin.png";
 import kizzoImg from "../assets/kizzo.png";
 import diamondFinanceImg from "../assets/diamondfinance.png";
 import bharatLaunchImg from "../assets/bharatlaunch.png";
@@ -23,15 +23,15 @@ type Project = {
 
 const PROJECTS: Project[] = [
   {
-    name: "Broker Streets",
-    category: "Business / Technology",
-    desc: "A digital platform and business ecosystem built around the brokerage industry.",
-    url: "brokerstreets.com",
-    fullUrl: "https://brokerstreets.com",
-    tags: ["Brokerage Tech", "Digital Platform", "Ecosystem"],
+    name: "AI Jamin",
+    category: "PropTech / AI Platform",
+    desc: "An intelligent digital platform and marketplace transforming land, property, and agricultural real estate discovery.",
+    url: "aijamin.in",
+    fullUrl: "https://aijamin.in",
+    tags: ["AI & PropTech", "Digital Platform", "Smart Ecosystem"],
     featured: true,
-    image: brokerstreetsImg,
-    alt: "Broker Streets - Gujarat's Trusted Marketplace for Agricultural & NA Land",
+    image: aiJaminImg,
+    alt: "AI Jamin - Gujarat's Trusted Marketplace for Agricultural & NA Land",
   },
   {
     name: "Kizzo",
